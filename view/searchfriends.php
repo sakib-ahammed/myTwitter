@@ -77,8 +77,13 @@ require_once 'header.php';
 
 	    <!-- result display here in view list -->
 	    <div class="row">
+<<<<<<< HEAD
 		 <div class="col-md-8 col-md-offset-2" id="displaylist" style="display: none;">
 	    	<ul class="list-group">
+=======
+		 <div class="col-md-8 col-md-offset-2">
+	    	<ul class="list-group" id="displaylist">
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 			  	
 			  	<?php for($i = 0; $i < 10; $i++) { ?>
 			  		<li class="list-group-item" id="display<?php echo $i; ?>">
@@ -148,6 +153,10 @@ require_once 'header.php';
 		    	$("#displaylist").attr("style", "display:none;");
 		    }
 		    else{
+<<<<<<< HEAD
+=======
+		    	$("#displaylist").attr("style", "");
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		    	searchData = JSON.parse(searchData);
 		    	processSearchData();
 		    }
@@ -161,7 +170,10 @@ require_once 'header.php';
 		userFollowerData = searchData[searchData.length-1];
 		
 		displayData();
+<<<<<<< HEAD
 		$("#displaylist").attr("style", "");
+=======
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		if(currentPage == 0)
 			$("#btn-back").attr("style", "display:none;");
 		else

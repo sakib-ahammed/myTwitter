@@ -22,8 +22,13 @@
       <a class="navbar-brand" href="/Twitter/view/">myTwitter</a>
 
       <ul class="nav navbar-nav">
+<<<<<<< HEAD
         <li class="nav-item active" >
           <a class="nav-link" style="float: right;" href="/Twitter/view/mySearch.php">my Search Engine</span></a>
+=======
+        <li class="nav-item active">
+          <a class="nav-link" href="/Twitter/view/mySearch.php">my Search Engine</span></a>
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
         </li>
     </ul>
 

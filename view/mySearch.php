@@ -50,8 +50,13 @@ require_once 'header.php';
 
 	    <!-- result display here in view list -->
 	    <div class="row">
+<<<<<<< HEAD
 		 <div class="col-md-8 col-md-offset-2" id="displaylist" style="display: none;">
 	    	<ul class="list-group" >
+=======
+		 <div class="col-md-8 col-md-offset-2">
+	    	<ul class="list-group" id="displaylist">
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 			  	
 			  <?php for($i = 0; $i < 10; $i++) { ?>
 			  		<li class="list-group-item" id="display<?php echo $i; ?>">
@@ -100,6 +105,7 @@ require_once 'header.php';
 	// getting information from database
 
 	function getInformation(){
+<<<<<<< HEAD
 		// var ss = document.getElementById("searchfriendvalue").value;
 		// ss = ss.trim();
 		// if(ss.length < 1){
@@ -107,6 +113,15 @@ require_once 'header.php';
 		// 	$("#btn-back").attr("style", "display:none;");
 		// 	$("#btn-next").attr("style", "display:none;");
 		// }
+=======
+		var ss = document.getElementById("searchfriendvalue").value;
+		ss = ss.trim();
+		if(ss.length < 1){
+			$("#displaylist").attr("style", "display:none;");
+			$("#btn-back").attr("style", "display:none;");
+			$("#btn-next").attr("style", "display:none;");
+		}
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 
 		xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
@@ -187,7 +202,11 @@ require_once 'header.php';
 			$("#displaylist").attr("style", "");
 			currentPage = 0;
 		}
+<<<<<<< HEAD
 		resultInfo = [];
+=======
+
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		for(var i=0; i<searchStr.length; i++){
 			for(var j=0; j<Indexing[searchStr[i]].length; j++)
 				if(notDuplicateInfo(resultInfo, Indexing[searchStr[i]][j]))
@@ -303,7 +322,10 @@ require_once 'header.php';
 	var currentPage = 0;
 	function processData(){
 		displayTweet();
+<<<<<<< HEAD
 		$("#displaylist").attr("style", "");
+=======
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		if(currentPage == 0)
 			$("#btn-back").attr("style", "display:none;");
 		else

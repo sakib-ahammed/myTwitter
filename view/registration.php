@@ -214,6 +214,7 @@ require_once 'header.php';
     </div> 
 
 <div class="col-md-6">
+<<<<<<< HEAD
   <div class="pull-right">
       <form class="form-signin" action="../">       
         <h4 class="form-signin-heading">Already registrated?</h4>    
@@ -222,6 +223,17 @@ require_once 'header.php';
   </div>
 </div>
 
+=======
+<div class="pull-right">
+    <form class="form-signin" action="../">       
+      <h4 class="form-signin-heading">Already registrated?</h4>    
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button> 
+    </form>
+</div>
+</div>
+
+
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
   </div>
  </div>
 

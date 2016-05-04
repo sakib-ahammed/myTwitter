@@ -21,6 +21,7 @@ require_once 'header.php';
 	<script type="text/javascript" src="js/methods.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 <script type="text/javascript">
 	function checkChar(){
 		$("#error_tweet_length").attr("style", "float:right;");
@@ -53,10 +54,18 @@ require_once 'header.php';
 
 <div class="container" id="homepage">
 <form role = "form" action="../models/posttweet.php" name="tweet_form" onsubmit="return checkLength()" method="post">
+=======
+<br>
+
+
+<div class="container" id="homepage">
+<form role = "form" action="../models/posttweet.php" method="post">
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 
 <div class="form-horizontal">
 	
 	<div class="row">
+<<<<<<< HEAD
         <div class="col-md-8">
             
             <p id="doing">What are you doing?</p>
@@ -67,6 +76,18 @@ require_once 'header.php';
     <div class="form-group">
         <div class="col-md-8">
             <textarea class="form-control" id="tweet_field" name="tweet" rows="2" onkeyup="checkChar()" placeholder="What's your mind?" required ></textarea>
+=======
+        <div class="col-md-6">
+            <p id="doing">What are you doing?</p>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-md-8">
+            <textarea class="form-control" name="tweet" rows="2" placeholder="What's your mind?" required ></textarea>
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
         </div>
     </div>
 
@@ -74,7 +95,11 @@ require_once 'header.php';
     <div class="form-group">
 	    <div class="col-md-8">
 	            <div class="col-md-10">
+<<<<<<< HEAD
 	            	<li class="list-group-item" >
+=======
+	            	<li class="list-group-item">
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		            	<span id="newesttweet">login user latest tweet</span><br>
 		            	<span id="newesttweettime">login user latest tweet time</span>
 		            </li>
@@ -95,7 +120,11 @@ require_once 'header.php';
 
 
 <div class="container">
+<<<<<<< HEAD
   	<div class="row" id="displaylist" style="display: none;">
+=======
+  	<div class="row">
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 	  	<div class="col-md-8">
 			<ul class="list-group">
 			  	
@@ -185,7 +214,10 @@ require_once 'header.php';
 	function processData(){
 
 		displayTweet();
+<<<<<<< HEAD
 		$("#displaylist").attr("style", "");
+=======
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		if(currentPage == 0)
 			$("#btn-back").attr("style", "display:none;");
 		else

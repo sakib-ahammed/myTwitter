@@ -45,8 +45,13 @@ $type = $_GET["type"];
 	  	</div>
 	</div>
 
+<<<<<<< HEAD
   	<div class="row" id="displaylist" style="display: none;">
 	  	<div class="col-md-8" >
+=======
+  	<div class="row">
+	  	<div class="col-md-8">
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 			<ul class="list-group">
 			  	
 			<!-- list view start  -->
@@ -149,7 +154,10 @@ $type = $_GET["type"];
 	function processData(){
 
 		displayTweet();
+<<<<<<< HEAD
 		$("#displaylist").attr("style", "");
+=======
+>>>>>>> bf2fd72058cb94713eeb047052f17f13d6b9531d
 		if(currentPage == 0)
 			$("#btn-back").attr("style", "display:none;");
 		else
